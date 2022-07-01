@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --general-padding: 60px 100px;
+    --mutexd-text: grey;
+    --h2-b-margin:15px;
+    --p: 20px;
+    --h2: 45px;
+    --foot-padd: 40px 50px;
+    --medium-padding: 30px 50px;
+}
+p{
+    color: var(--mutexd-text);
+    font-size: var(--p);
+    margin-bottom: 10px;
+}
+h2{
+    font-size: var(--h2);
+    margin-bottom: var(--h2-b-margin);
+}
+section.starting{
+    margin-top: 100px;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+section.starting img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+div.header-text{
+    width: 100%;
+    top: 50%;
+    position: absolute;
+}
+section.starting h1{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    z-index: 1;
+}
+section.intro{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: var(--general-padding);
+    align-items: center;
+}
+section.intro div.glass{
+    width: 50%;
+}
+section.intro div.glass img{
+    width: 100%;
+}
+section.intro div.introduction-text{
+    width: 45%;
+}
+section.intro div.introduction-text h2{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+section.intro div.introduction-text p{
+    font-size: var(--p);
+    color: var(--mutexd-text);
+    margin-bottom: 15px;
+}
+section.production{
+    display: flex;
+    padding: var(--general-padding);
+    width: 100%;
+}
+section.production div.left{
+    width: 50%;
+}
+section.production div.left ul {
+    /* list-style-position: ; */
+    list-style: none;
+    padding: 0;
+}
+section.production div.left ul li{
+    padding-left: 1.3em;
+    color: var(--mutexd-text);
+    margin: 10px 0;
+    font-size: 20px;
+
+}
+div.glass{
+    width: 100%;
+}
+div.glass div.pls{
+    width: 100%;
+    border: 10px red;
+    display: flex;
+}
+div.glass div.pls img{
+    width: 50%;
+    transform: scale(0.8);
+    transition: all 2s;
+}
+div.glass div.pls img:hover{
+    transform: scale(0.9);
+}
+div.glass div.pls img:nth-child(2):hover{
+    transform: scale(0.8);
+}
+div.glass div.pls img:nth-child(2){
+    transform: scale(0.9);
+}
+section.production{
+    display: flex;
+    padding: var(--general-padding);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+section.production div.left{
+    width: 45%;
+}
+section.production div.right{
+    width: 50%;
+}
+section.production div.right img{
+    width: 100%;
+}
+section.health{
+    padding: var(--general-padding);
+}
+section.health p{
+    padding-bottom: 15px;
+}
+footer{
+    background: rgba(0, 0, 0, 0.692);
+    padding: var(--foot-padd);
+    /* color: white; */
+}
+footer div.wrapper{
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.get{
+    margin-bottom: 10px;
+} 
+div.where{
+    margin-bottom: 10px;
+}
+footer div.get ul{
+    list-style: none;
+}
+img.api{
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: 2s;
+}
+img.api:hover{
+    transform: scale(1);
+}
+footer  h4{
+    margin: 10px 0;
+    color: white;
+}
+footer div.get ul ul{
+    display: flex;
+}
+footer div.get ul ul li{
+    margin: 10px ;
+    cursor: pointer;
+}
+footer div.get ul ul li i{
+    font-size: 20px;
+}
+footer div.get ul ul li :hover{
+    color: red;
+}
+div.services{
+    margin-bottom: 10px;
+}
+div.services a{
+    color: var(--mutexd-text);
+    text-decoration: none;
+}
+div.services ul {
+    list-style: none;
+    padding: 0;
+}
+div.services ul li{
+    padding-left: 1.3em;
+    color: var(--mutexd-text);
+    margin: 10px 0;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+
+}
+div.services ul li:before {
+    content: "\f00c"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+  }
+  div.services ul li:hover, div.services a:hover{
+    color: red;
+  }
+  div.final{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+@media screen and (max-width:955px) {
+    section.intro{
+        display: block;
+        padding: var(--medium-padding);
+    }
+    section.intro div.glass{
+        width: 100%;
+        text-align: center;
+    }
+    section.intro div.glass img{
+        width: 50%;
+    }
+    section.intro div.introduction-text{
+        width: 100%;
+    }
+    section.production{
+        display: block;
+        padding: var(--medium-padding);
+    }
+    section.production div.left{
+        width: 100%;
+    }
+    section.production div.right{
+        width: 100%;
+    }
+    footer div.wrapper{
+        text-align: center;
+    }
+    section.health{
+        padding: var(--medium-padding);
+    }
+  }

@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --general-padding: 60px 100px;
+    --mutexd-text: grey;
+    --h2-b-margin:15px;
+    --p: 20px;
+    --h2: 45px;
+    --foot-padd: 40px 50px;
+    --medium-padding: 30px 50px;
+}
+button{
+    padding:10px 5px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(200, 170, 170);
+}
+button:hover{
+    color: rgb(200, 170, 170);
+    background: black;
+}
+p{
+    color: var(--mutexd-text);
+    font-size: var(--p);
+}
+h2{
+    font-size: var(--h2);
+    margin-bottom: var(--h2-b-margin);
+}
+header{
+    width: 100%;
+}
+
+section.starting{
+    margin-top: 100px;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+section.starting img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+div.header-text{
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    
+}
+section.starting h1{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    z-index: 1;
+}
+section.news{
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding-top: 40px;
+    padding-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+section.news div.left{
+    width: 60%;
+}
+section.news div.right{
+    width: 35%;
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.692);
+    padding: var(--foot-padd);
+    /* color: white; */
+}
+footer div.wrapper{
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* div.get{
+    width: 25%;
+} */
+/* div.where{
+    width: 30%;
+} */
+footer div.get ul{
+    list-style: none;
+}
+img.api{
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: 2s;
+}
+img.api:hover{
+    transform: scale(1);
+}
+footer  h4{
+    margin: 10px 0;
+    color: white;
+}
+footer div.get ul ul{
+    display: flex;
+}
+footer div.get ul ul li{
+    margin: 10px ;
+    cursor: pointer;
+}
+footer div.get ul ul li i{
+    font-size: 20px;
+}
+footer div.get ul ul li :hover{
+    color: red;
+}
+div.services a{
+    color: var(--mutexd-text);
+    text-decoration: none;
+}
+div.services ul {
+    list-style: none;
+    padding: 0;
+}
+div.services ul li{
+    padding-left: 1.3em;
+    color: var(--mutexd-text);
+    margin: 10px 0;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+
+}
+div.services ul li:before {
+    content: "\f0c3"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+  }
+  div.services ul li:hover, div.services a:hover{
+    color: red;
+  }
+  div.final{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+@media  screen and (max-width:710px) {
+    section.news{
+        padding-left: 20px;
+        display: block;
+    }
+    section.news div.left{
+        width: 90%;
+        margin: 20px auto;
+    }
+    section.news div.right{
+        width: 95%;
+        text-align: center;
+    }
+
+}
+@media  screen and (max-width:458px) {
+    section.news{
+        padding-left: 20px;
+        display: block;
+    }
+}
